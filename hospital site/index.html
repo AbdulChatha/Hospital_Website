@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('images/bg.webp');
+            background-size: 100% 130vh;
+            background-repeat: no-repeat;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: white;
+            border-bottom: 1.5px solid gainsboro;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(26, 140, 247);
+
+        }
+
+        .item {
+            padding-top: 20px;
+            height: 60px;
+            width: 150px;
+            text-align: center;
+        }
+
+        #logo {
+            width: 70px;
+            height: 30px;
+        }
+
+        #emp {
+            flex-shrink: 3;
+        }
+
+        .center {
+            width: 100%;
+            height: 35vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center input 
+        {
+            height: 50px;
+            width: 77%;
+            border: none;
+            padding-left: 10px;
+          
+        }
+        .center button 
+        {
+            background-color: rgb(26, 140, 247);
+            border: none;
+            color: white;
+            width: 100px;
+            height: 50px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sitem {
+            text-align: center;
+            color: white;
+            background-color: rgb(26, 140, 247);
+            width: 305px;
+            height: 205px;
+            border: 0.5px solid white;
+        }
+
+        #Treat {
+            text-align: center;
+            color: rgb(26, 140, 247);
+        }
+        #Treat h1 
+        {
+            margin-bottom: 30px;
+        }
+
+        .keyfeatures {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        
+        }
+
+        .kf {
+            width: 370px;
+            margin: 20px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0px 0px 10px lightgray;
+            border-radius: 5px;
+        }
+
+        .kfts {
+            margin-top: 40px;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .outercenter {
+            display: flex;
+        }
+
+        #sidepic {
+            width: 400px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .doctor {
+            width: 260px;
+            background-color: white;
+            box-shadow: 0px 0px 10px lightgray;
+            margin-bottom: 20px;
+        }
+
+        .doctor img {
+            width: 255px;
+            height: 330px;
+        }
+
+        .doctor p {
+            padding: 10px;
+            text-align: justify;
+        }
+        .menu 
+        {
+            display:none;
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+        }
+        @media(max-width:1208px)
+        {
+            .item {
+            width: 80px;
+            }
+        }
+        @media(max-width:705px)
+        {
+            .container
+            {
+                flex-direction: column;
+                display: none;
+            }
+            .item
+            {
+                width: 100%;
+            }
+        .menu 
+        {
+            display:block;
+        }
+        }
+       
+        
+    </style>
+
+</head>
+
+<body>
+    <menu>
+    <div class="menu"></div>
+    <div class="menu"></div>
+    <div class="menu"></div>
+  </menu>
+    <div class="container">
+        <div class="item"><img id="logo" src="images/logo.png" alt="image not found"></div>
+        <div class="item"><a href="#">Home</a></div>
+        <div class="item"><a href="blog.html">Blogs</a></div>
+        <div class="item"><a href="About Us.html">About Us</a></div>
+        <div class="item"><a href="Contact Us.html">Contact Us</a></div>
+        <div class="item"><a href="appointment.html">Appointment</a></div>
+        <div class="item"><a href="Sign In.html">Sign In</a></div>
+        <div class="item"><a href="Sign Up.html">Sign Up</a></div>
+        
+    </div>
+    <div class="center">
+        <input type="search" placeholder="Find and book the best doctors" name="search" id="">
+        <button>search</button>
+    </div>
+    <div id="Treat">
+        <h1>What We Treat</h1>
+    </div>
+    <div class="services">
+        <div class="sitem"><img src="images/allergies.png" alt="image not found">
+            <h3>Allergies</h3>
+        </div>
+        <div class="sitem"><img src="images/cold_and_flu.png" alt="image not found">
+            <h3>Cold and Flu</h3>
+        </div>
+        <div class="sitem"><img src="images/dipression.png" alt="image not found">
+            <h3>Anxiety & Depression</h3>
+        </div>
+        <div class="sitem"><img src="images/ENT.png" alt="image not found">
+            <h3>ENT</h3>
+        </div>
+        <div class="sitem"><img src="images/Gastric.png" alt="image not found">
+            <h3>Gastric Diseases</h3>
+        </div>
+        <div class="sitem"><img src="images/injuri.png" alt="image not found">
+            <h3>Minor Injuries</h3>
+        </div>
+        <div class="sitem"><img src="images/skin_d.png" alt="image not found">
+            <h3>Skin Diseases</h3>
+        </div>
+        <div class="sitem"><img src="images/More.png" alt="image not found">
+            <h3>Explore More</h3>
+        </div>
+    </div>
+    <div class="kfts">
+        <h2>Key features</h2>
+    </div>
+    <!-- <div class="outercenter"> -->
+    <div class="keyfeatures">
+        <div class="kf">
+            <h3>100% Safety</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias sit repudiandae iste magnam nulla
+                dolorem, inventore nobis, aspernatur porro, commodi consectetur quo sunt maiores ab. Magni nulla
+                natus
+                obcaecati consequuntur delectus magnam earum veniam.</p>
+        </div>
+        <div class="kf">
+            <h3>Patient Satisfaction</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor quos obcaecati omnis, eligendi
+                maxime
+                repellendus. Inventore ut adipisci illum! Nam neque quibusdam totam! Voluptas dignissimos officiis
+                fuga
+                tempora rem et vel. Dolorem, rerum!</p>
+        </div>
+        <div class="kf">
+            <h3>Friendly Doctors</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia accusamus laboriosam corporis
+                quae!
+                Eum, nostrum rem ratione asperiores rerum quidem illum, necessitatibus aliquid laborum architecto
+                nam
+                sed exercitationem aliquam ipsam molestias aut nisi ipsa?</p>
+        </div>
+
+        <div class="kf">
+            <h3>Low rates</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem harum, explicabo minus, dolorum
+                iure modi ipsa et delectus similique dolore qui maxime? Neque error alias eveniet. Numquam modi,
+                ullam
+                odio
+                voluptatem deleniti similique magnam.</p>
+        </div>
+        <div class="kf">
+            <h3>Low rates</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem harum, explicabo minus, dolorum
+                iure modi ipsa et delectus similique dolore qui maxime? Neque error alias eveniet. Numquam modi,
+                ullam
+                odio
+                voluptatem deleniti similique magnam.</p>
+        </div>
+        <div class="kf">
+            <h3>Low rates</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem harum, explicabo minus, dolorum
+                iure modi ipsa et delectus similique dolore qui maxime? Neque error alias eveniet. Numquam modi,
+                ullam
+                odio
+                voluptatem deleniti similique magnam.</p>
+        </div>
+        <!-- </div> -->
+        <!-- <img id="sidepic" src="doctor.png" alt=""> -->
+    </div>
+    <div class="kfts">
+        <h2>Our Team</h2>
+    </div>
+    <div class="team">
+        <div class="doctor"><img src="images/nurse_t1.png" alt="image not found">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius culpa a quidem quo minus.</p>
+        </div>
+        <div class="doctor"><img src="images/doctor_t1.png" alt="image not found">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius culpa a quidem quo minus.</p>
+        </div>
+        <div class="doctor"><img src="images/doctor_t2.jpg" alt="image not found">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius culpa a quidem quo minus.</p>
+        </div>
+        <div class="doctor"><img src="images/nurse_t2.jpg" alt="image not found">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eius culpa a quidem quo minus.</p>
+        </div>
+    </div>
+    <script src="jquery-3.6.3.js"></script>
+    <script>
+        $("a").hover(function () {
+            $(this).css("color", "white");
+            $(this).parent("div").css("background-color", "rgb(26, 140, 247)");
+        },
+            function () {
+                $(this).css("color", "rgb(26, 140, 247)");
+                $(this).parent("div").css("background-color", "white");
+            }
+        );
+ $(".menu").click(function(){
+  $(".container").toggle();
+});
+    </script>
+</body>
+
+</html>

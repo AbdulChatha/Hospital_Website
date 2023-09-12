@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body
+        {
+            background-image: url('images/bg.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .sing_upouterbox
+        {
+            color: white;
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: space-around;
+            background-color: rgb(26, 140, 247);
+            width: 70%;
+        }
+        .su_item input
+        {
+            border: none;
+            width: 300px;
+            height: 43px;
+        }
+        .si_item input 
+        {
+            border: none;
+            width: 300px;
+            height: 43px;
+        }
+        .signup {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            background-color: rgb(26, 140, 247);
+            ;
+        }
+
+        .signup input {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 20px;
+            border: none;
+            background-color: mediumaquamarine;
+        }
+        .signuptxt {
+            text-align: center;
+            color: rgb(26, 140, 247);
+        }
+        @media (max-width:470px)
+        {
+            .sing_upouterbox
+            {
+                font-size: 15px;
+            }
+            .su_item input, select
+            {
+                width: 100%;
+                height: 25px;
+            }
+            .signup input
+            {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="signuptxt">Sign Up</h1>
+    <form action="insertdata.php" method="get">
+        <div class="sing_upouterbox">
+        <div class="signupcontainer_l">
+            <div class="su_item">
+                <p>Email</p>
+                <input type="email" name="suemail" id="">
+            </div>
+            <div class="su_item">
+                <p>Password</p>
+                <input type="password" name="supassword" id="">
+            </div>
+            <div class="su_item">
+                <p>Confirm Password</p>
+                <input type="password" name="cpassword" id="">
+            </div> 
+        </div>
+        <div class="signupcontainer_r">
+            <div class="su_item">
+                <p>First Name</p>
+                <input type="text" name="fname" id="">
+            </div>
+            <div class="su_item">
+                <p>Last Name</p>
+                <input type="text" name="lname" id="">
+            </div>
+            <div class="su_item">
+                <p>Date of Birth</p>
+                <input type="date" name="dob" id="">
+            </div>
+            
+        </div>
+        </div>
+        <div class="signup">
+            <input type="submit" value="Sign Up" name="signup">
+        </div>
+    </form>
+
+</body>
+</html>

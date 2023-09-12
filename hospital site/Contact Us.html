@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-image: url('images/bg.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .contactform {
+            width: 70%;
+            margin: auto;
+            background-color: rgb(26, 140, 247);
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            /* border: 2px solid black; */
+        }
+
+        .formright {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            /* border: 2px solid red; */
+        }
+
+        .ritem {
+            /* margin: 5px; */
+            font-size: 20px;
+        }
+
+        .formright input {
+            border: none;
+            width: 300px;
+            height: 43px;
+        }
+
+        .formleft {
+            /* border: 2px solid blue; */
+            font-size: 20px;
+        }
+
+        textarea {
+            border: none;
+            resize: none;
+        }
+
+        .sendmsg {
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            background-color: rgb(26, 140, 247);
+            ;
+        }
+
+        .sendmsg input {
+            padding: 15px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            color: white;
+            font-size: 20px;
+            border: none;
+            background-color: mediumaquamarine;
+        }
+
+        .contactus {
+            text-align: center;
+            color: rgb(26, 140, 247);
+            /* background-color: white; */
+        }
+        .ft 
+        {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display:flex;
+            justify-content: center;
+        }
+        .ftitem img
+        {
+            margin: 5px;
+            background-color: white;
+            width: 105px;
+            height: 100px;
+            border-radius: 50%;
+
+        }
+        @media (max-width:610px)
+        {
+            .formright input
+            {
+                width: 100%;
+                height: 25px;
+            }
+            textarea
+            {
+                
+                width: 100%;
+                height: 30vh;
+            }
+            .formleft 
+            {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .ftitem img
+            {
+                width: 60px;
+                height: 55px;
+            }
+            .sendmsg input
+            {
+                padding: 5px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="contactus">Contact Us</h1>
+    <form action="">
+        <div class="contactform">
+            <div class="formright">
+                <div class="ritem">
+                    <p>Name</p>
+                    <input type="text" name="name" id="">
+                </div>
+                <div class="ritem">
+                    <p>Email</p>
+                    <input type="email" name="email" id="">
+                </div>
+                <div class="ritem">
+                    <p>Phone</p>
+                    <input type="text" name="phone" id="">
+                </div>
+                <div class="ritem">
+                    <p>Subject</p>
+                    <input type="text" name="subject" id="">
+                </div>
+            </div>
+            <div class="formleft">
+                <p>Message</p>
+                <textarea name="message" id="" cols="50" rows="25"></textarea>
+            </div>
+        </div>
+        <div class="sendmsg">
+            <input type="submit" value="Send Message" name="submit">
+        </div>
+    </form>
+    <footer class="ft">
+        <a href="https://web.facebook.com/profile.php?id=100017541908823" class="ftitem" target="_blank">
+            <img src="images/fb.webp" alt="image not found"></a>
+        <a href="https://twitter.com/" class="ftitem" target="_blank"><img src="images/twitter.png" alt="image not found"></a>
+        <a href="https://www.instagram.com/" class="ftitem" target="_blank"><img src="images/insta.png"
+                alt="image not found"></a>
+        <a href="https://www.linkedin.com/in/abdul-haq-912984211/" class="ftitem" target="_blank"><img
+                src="images/linkedin.png" alt="image not found"></a>
+    </footer>
+</body>
+
+</html>
